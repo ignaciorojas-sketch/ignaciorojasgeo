@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import avatarImg from "@/assets/ignacio-avatar.jpg";
 
 const nav = [
   { to: "/", label: "Inicio", exact: true },
