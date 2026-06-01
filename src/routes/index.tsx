@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-valpo.jpg";
+import portraitImg from "@/assets/ignacio-portrait.jpg";
 import vinylImg from "@/assets/vinyl.jpg";
 import terrenoImg from "@/assets/terreno.jpg";
 
@@ -23,30 +23,45 @@ const latest = [
 function Index() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b-2 border-ink">
-        <div className="relative h-[78vh] min-h-[520px] w-full">
-          <img src={heroImg} alt="Vista aérea de Valparaíso" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-[oklch(0.5_0.22_27)] mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-ink/40 via-transparent to-transparent" />
-          <div className="relative z-10 mx-auto max-w-7xl px-6 h-full flex flex-col justify-center">
-            <span className="hl-block self-start text-xs uppercase tracking-[0.3em] font-bold mb-5">
+      {/* HERO — retrato + tipografía */}
+      <section className="relative overflow-hidden border-b-2 border-ink bg-ink text-background">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:py-16 grid md:grid-cols-[1.1fr_1fr] gap-8 md:gap-12 items-center">
+          {/* Texto */}
+          <div className="order-2 md:order-1">
+            <span className="hl-block inline-block text-xs uppercase tracking-[0.3em] font-bold mb-6">
               Geografía crítica · Valparaíso
             </span>
-            <h1 className="font-display text-6xl md:text-8xl leading-[0.85] max-w-4xl">
-              <span className="hl-block">Pensar el espacio,</span>{" "}
-              <span className="hl-block">habitar el sonido.</span>
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.85]">
+              Pensar el espacio,<br />
+              <span className="text-highlight">habitar el sonido.</span>
             </h1>
-            <p className="mt-6 max-w-xl bg-ink text-background px-4 py-3 text-base md:text-lg">
+            <p className="mt-6 max-w-md text-base md:text-lg text-background/80">
               Investigaciones sobre territorio, desplazamiento y vivienda; selecciones de vinilo desde el puerto olvidado.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link to="/publicaciones" className="bg-ink text-highlight px-5 py-3 font-display text-xl uppercase tracking-wide hover:opacity-90">
+              <Link to="/publicaciones" className="bg-highlight text-background px-5 py-3 font-display text-xl uppercase tracking-wide hover:bg-background hover:text-ink transition-colors">
                 Publicaciones →
               </Link>
-              <Link to="/musica" className="bg-background border-2 border-ink px-5 py-3 font-display text-xl uppercase tracking-wide hover:bg-ink hover:text-highlight">
+              <Link to="/musica" className="border-2 border-background px-5 py-3 font-display text-xl uppercase tracking-wide hover:bg-background hover:text-ink transition-colors">
                 Música
               </Link>
+            </div>
+          </div>
+          {/* Retrato */}
+          <div className="order-1 md:order-2 relative">
+            <div className="relative aspect-[4/5] overflow-hidden border-2 border-highlight">
+              <img
+                src={portraitImg}
+                alt="Ignacio Rojas-Rubio en su estudio con tornamesas"
+                width={1280}
+                height={1600}
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[oklch(0.5_0.22_27)] mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
+            </div>
+            <div className="absolute -bottom-3 -left-3 bg-highlight text-background px-3 py-2 font-display text-sm uppercase tracking-widest">
+              Self-portrait · Valpo
             </div>
           </div>
         </div>
