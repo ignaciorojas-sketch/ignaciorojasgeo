@@ -25,8 +25,12 @@ export function SiteHeader() {
           <div className="font-display text-4xl md:text-5xl tracking-tight">
             IGNACIO <span className="hl-block">ROJAS-RUBIO</span>
           </div>
-          <div className="mt-1 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Dr · Geógrafo · Scientist of Dub
+          <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
+            <span>Dr. · Geógrafo</span>
+            <span className="text-ink/30">/</span>
+            <span>Profe Nacho · UPLA</span>
+            <span className="text-ink/30">/</span>
+            <span>GEO Selektor · Vinilo</span>
           </div>
         </Link>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 font-display text-xl">
