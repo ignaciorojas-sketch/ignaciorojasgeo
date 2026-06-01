@@ -36,7 +36,7 @@ function Index() {
               <span className="text-highlight">habitar el sonido.</span>
             </h1>
             <p className="mt-6 max-w-md text-base md:text-lg text-background/80">
-              Investigaciones sobre territorio, desplazamiento y vivienda; selecciones de vinilo desde el puerto olvidado.
+              Investigaciones sobre el espacio geográfico, la filosofía y economía política, la vivienda para la clase trabajadora y la producción urbana de la música.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link to="/publicaciones" className="bg-highlight text-background px-5 py-3 font-display text-xl uppercase tracking-wide hover:bg-background hover:text-ink transition-colors">
