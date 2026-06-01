@@ -52,14 +52,7 @@ function Index() {
               </Link>
             </div>
           </div>
-          <div className="relative w-40 sm:w-48 md:w-56 lg:w-64 justify-self-start md:justify-self-end">
-            <div className="relative aspect-[4/5] overflow-hidden border-2 border-highlight shadow-2xl">
-              <img src={portraitImg} alt="Ignacio Rojas-Rubio" className="absolute inset-0 h-full w-full object-cover" />
-            </div>
-            <div className="absolute -bottom-2 -left-2 bg-highlight text-background px-2 py-1 font-display text-[10px] uppercase tracking-widest">
-              Valpo
-            </div>
-          </div>
+          <div aria-hidden className="hidden md:block" />
         </div>
       </section>
 
