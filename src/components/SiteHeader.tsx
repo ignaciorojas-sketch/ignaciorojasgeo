@@ -12,7 +12,7 @@ const nav = [
 export function SiteHeader() {
   return (
     <header className="border-b-2 border-ink">
-      <div className="bg-highlight border-b border-ink/20">
+      <div className="bg-highlight text-background border-b border-ink/20">
         <div className="mx-auto max-w-7xl px-6 py-1.5 text-xs font-medium flex items-center justify-between">
           <span className="uppercase tracking-widest">Valparaíso · Chile</span>
           <a href="mailto:ignacio.rojas@upla.cl" className="hover:underline">
