@@ -3,11 +3,11 @@ import avatarImg from "@/assets/ignacio-avatar.jpg";
 
 const nav = [
   { to: "/", label: "Inicio", exact: true },
-  { to: "/publicaciones", label: "Publicaciones" },
-  { to: "/terreno", label: "Terreno" },
-  { to: "/pasantias", label: "Pasantías" },
-  { to: "/musica", label: "Música" },
-  { to: "/cv", label: "CV" },
+  { to: "/investigacion", label: "Investigación" },
+  { to: "/aula", label: "Aula" },
+  { to: "/curaduria", label: "Curaduría Musical" },
+  { to: "/blog", label: "Blog" },
+  { to: "/sobre-mi", label: "Sobre mí" },
 ];
 
 export function SiteHeader() {
