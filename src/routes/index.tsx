@@ -52,6 +52,25 @@ function Index() {
         </div>
       </section>
 
+      {/* TRES IDENTIDADES */}
+      <section className="border-b-2 border-ink bg-ink text-background">
+        <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-background/15">
+          {[
+            { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Geógrafo · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/publicaciones" },
+            { n: "02", alias: "Profe Nacho", role: "Docencia · UPLA", desc: "Pedagogías territoriales y trabajo de campo con estudiantes en los cerros de Valparaíso.", to: "/terreno" },
+            { n: "03", alias: "GEO Selektor", role: "Selector de vinilo · Dub", desc: "Bajo profundo, raíces y rotaciones. Sesiones y selecciones desde el puerto olvidado.", to: "/musica" },
+          ].map((p) => (
+            <a key={p.n} href={p.to} className="group p-6 md:p-8 first:pt-8 md:first:pt-8 hover:bg-highlight transition-colors">
+              <div className="font-display text-5xl text-highlight group-hover:text-ink">{p.n}</div>
+              <div className="mt-4 font-display text-3xl uppercase leading-tight">{p.alias}</div>
+              <div className="mt-1 text-xs uppercase tracking-[0.3em] text-background/60 group-hover:text-ink/70">{p.role}</div>
+              <p className="mt-4 text-sm text-background/80 group-hover:text-ink/90 max-w-xs">{p.desc}</p>
+              <div className="mt-5 text-xs uppercase tracking-[0.3em] text-highlight group-hover:text-ink">Ver →</div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* LATEST */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="flex items-end justify-between border-b-2 border-ink pb-3 mb-10">
