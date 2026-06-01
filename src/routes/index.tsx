@@ -27,7 +27,7 @@ function Index() {
       <section className="relative overflow-hidden border-b-2 border-ink">
         <div className="relative h-[78vh] min-h-[520px] w-full">
           <img src={heroImg} alt="Vista aérea de Valparaíso" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-[oklch(0.85_0.2_85)] mix-blend-multiply" />
+          <div className="absolute inset-0 bg-[oklch(0.5_0.22_27)] mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-tr from-ink/40 via-transparent to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 h-full flex flex-col justify-center">
             <span className="hl-block self-start text-xs uppercase tracking-[0.3em] font-bold mb-5">

@@ -9,9 +9,9 @@ interface PageHeroProps {
 }
 
 const tintMap = {
-  yellow: "bg-[oklch(0.85_0.2_85)]",
-  blue: "bg-[oklch(0.55_0.18_240)]",
-  red: "bg-[oklch(0.55_0.22_25)]",
+  yellow: "bg-[oklch(0.55_0.22_27)]", // ahora rojo (alias mantenido)
+  blue: "bg-[oklch(0.35_0.15_260)]",
+  red: "bg-[oklch(0.45_0.22_27)]",
 };
 
 export function PageHero({ image, eyebrow, title, description, tint = "yellow" }: PageHeroProps) {
