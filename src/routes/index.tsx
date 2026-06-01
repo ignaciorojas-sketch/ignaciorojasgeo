@@ -26,9 +26,9 @@ function Index() {
       {/* HERO — fondo Valparaíso + retrato pequeño */}
       <section className="relative overflow-hidden border-b-2 border-ink bg-ink text-background">
         <div className="absolute inset-0">
-          <img src={terrenoImg} alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-[oklch(0.25_0.08_27)] mix-blend-multiply opacity-80" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
+          <img src={portraitImg} alt="Ignacio Rojas-Rubio" className="absolute inset-0 h-full w-full object-cover object-center" />
+          <div className="absolute inset-0 bg-[oklch(0.25_0.08_27)] mix-blend-multiply opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/20" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-14 md:py-20 grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-center">
