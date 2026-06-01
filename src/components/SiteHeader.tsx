@@ -26,7 +26,7 @@ export function SiteHeader() {
             IGNACIO <span className="hl-block">ROJAS-RUBIO</span>
           </div>
           <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
-            <span>Dr. · Geógrafo</span>
+            <span>Dr. en Geografía</span>
             <span className="text-ink/30">/</span>
             <span>Profe Nacho · UPLA</span>
             <span className="text-ink/30">/</span>

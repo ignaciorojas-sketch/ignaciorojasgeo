@@ -56,7 +56,7 @@ function Index() {
       <section className="border-b-2 border-ink bg-ink text-background">
         <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-background/15">
           {[
-            { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Geógrafo · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/publicaciones" },
+            { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Dr. en Geografía · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/publicaciones" },
             { n: "02", alias: "Profe Nacho", role: "Docencia · UPLA", desc: "Pedagogías territoriales y trabajo de campo con estudiantes en los cerros de Valparaíso.", to: "/terreno" },
             { n: "03", alias: "GEO Selektor", role: "Selector de vinilo · Dub", desc: "Bajo profundo, raíces y rotaciones. Sesiones y selecciones desde el puerto olvidado.", to: "/musica" },
           ].map((p) => (
