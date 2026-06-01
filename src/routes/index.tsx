@@ -23,11 +23,16 @@ const latest = [
 function Index() {
   return (
     <>
-      {/* HERO — retrato + tipografía */}
+      {/* HERO — fondo Valparaíso + retrato pequeño */}
       <section className="relative overflow-hidden border-b-2 border-ink bg-ink text-background">
-        <div className="mx-auto max-w-7xl px-6 py-10 md:py-16 grid md:grid-cols-[1.1fr_1fr] gap-8 md:gap-12 items-center">
-          {/* Texto */}
-          <div className="order-2 md:order-1">
+        <div className="absolute inset-0">
+          <img src={terrenoImg} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-[oklch(0.25_0.08_27)] mix-blend-multiply opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-14 md:py-20 grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-center">
+          <div>
             <span className="hl-block inline-block text-xs uppercase tracking-[0.3em] font-bold mb-6">
               Geografía crítica · Valparaíso
             </span>
@@ -35,7 +40,7 @@ function Index() {
               Pensar el espacio,<br />
               <span className="text-highlight">habitar el sonido.</span>
             </h1>
-            <p className="mt-6 max-w-md text-base md:text-lg text-background/80">
+            <p className="mt-6 max-w-md text-base md:text-lg text-background/85">
               Investigaciones sobre el espacio geográfico, la filosofía y economía política, la vivienda para la clase trabajadora y la producción urbana de la música.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -47,21 +52,12 @@ function Index() {
               </Link>
             </div>
           </div>
-          {/* Retrato */}
-          <div className="order-1 md:order-2 relative">
-            <div className="relative aspect-[4/5] overflow-hidden border-2 border-highlight">
-              <img
-                src={portraitImg}
-                alt="Ignacio Rojas-Rubio en su estudio con tornamesas"
-                width={1280}
-                height={1600}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[oklch(0.5_0.22_27)] mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
+          <div className="relative w-40 sm:w-48 md:w-56 lg:w-64 justify-self-start md:justify-self-end">
+            <div className="relative aspect-[4/5] overflow-hidden border-2 border-highlight shadow-2xl">
+              <img src={portraitImg} alt="Ignacio Rojas-Rubio" className="absolute inset-0 h-full w-full object-cover" />
             </div>
-            <div className="absolute -bottom-3 -left-3 bg-highlight text-background px-3 py-2 font-display text-sm uppercase tracking-widest">
-              Self-portrait · Valpo
+            <div className="absolute -bottom-2 -left-2 bg-highlight text-background px-2 py-1 font-display text-[10px] uppercase tracking-widest">
+              Valpo
             </div>
           </div>
         </div>
