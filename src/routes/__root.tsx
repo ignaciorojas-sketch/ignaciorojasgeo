@@ -79,14 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Dub" },
+      { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
       { name: "description", content: "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde Valparaíso, Chile." },
       { name: "author", content: "Ignacio Rojas-Rubio" },
-      { property: "og:title", content: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Dub" },
-      { property: "og:description", content: "Geografía crítica, filosofía política y música urbana desde Valparaíso." },
+      { property: "og:title", content: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
+      { property: "og:description", content: "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde Valparaíso, Chile." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
+      { name: "twitter:description", content: "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde Valparaíso, Chile." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/19ddf576-f9ef-4ce4-abe2-d55c37432acf/id-preview-fb65fe52--5d8a6571-8c9f-4a92-a7ef-42e6df07d087.lovable.app-1780358142004.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/19ddf576-f9ef-4ce4-abe2-d55c37432acf/id-preview-fb65fe52--5d8a6571-8c9f-4a92-a7ef-42e6df07d087.lovable.app-1780358142004.png" },
     ],
     links: [
       {
