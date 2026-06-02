@@ -34,9 +34,9 @@ function Cv() {
           <h2 className="font-display text-4xl uppercase border-b-2 border-ink pb-3 mb-6">Formación</h2>
           <ul className="space-y-4">
             {[
-              { y: "Doctorado", t: "Doctor en Geografía" },
-              { y: "Magíster", t: "Magíster en Estudios Urbanos" },
-              { y: "Pregrado", t: "Licenciatura en Geografía" },
+              { y: "Doctorado", t: "Doctor en Geografía - PUC" },
+              { y: "Magíster", t: "Magíster en Geografía m/ Intervención Ambiental y Territorial - UAHC" },
+              { y: "Pregrado", t: "Licenciatura en Geografía - UPLA" },
             ].map((x) => (
               <li key={x.y} className="grid md:grid-cols-[180px_1fr] gap-4 items-baseline">
                 <span className="font-display text-2xl uppercase text-muted-foreground">{x.y}</span>
