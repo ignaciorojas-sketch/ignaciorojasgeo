@@ -6,7 +6,7 @@ import terrenoImg from "@/assets/terreno.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Dub" },
+      { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
       { name: "description", content: "Geografía crítica, filosofía política y música urbana desde el puerto olvidado de Valparaíso, Chile." },
     ],
   }),
@@ -60,9 +60,9 @@ function Index() {
       <section className="border-b-2 border-ink bg-ink text-background">
         <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-background/15">
           {[
-            { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Dr. en Geografía · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/publicaciones" },
-            { n: "02", alias: "Profe Nacho", role: "Docencia · UPLA", desc: "Pedagogías territoriales y trabajo de campo con estudiantes en los cerros de Valparaíso.", to: "/terreno" },
-            { n: "03", alias: "GEO Selektor", role: "Selector de vinilo · Dub", desc: "Bajo profundo, raíces y rotaciones. Sesiones y selecciones desde el puerto olvidado.", to: "/musica" },
+            { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Dr. en Geografía · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/investigación" },
+            { n: "02", alias: "Profe Nacho", role: "Docencia · Educación", desc: "Educación formal y no formal, trabajo de campo e IAP, to: "/aula" },
+            { n: "03", alias: "GEO Selektor", role: "Selector de vinilo · Dub", desc: "Vibraciones, raíces y territorialidad. Columnas de opinión, vivencas por el mundo, sesiones y selecciones.", to: "/curaduría musical" },
           ].map((p) => (
             <a key={p.n} href={p.to} className="group p-6 md:p-8 first:pt-8 md:first:pt-8 hover:bg-highlight transition-colors">
               <div className="font-display text-5xl text-highlight group-hover:text-ink">{p.n}</div>
@@ -129,11 +129,11 @@ function Index() {
       <section className="border-t-2 border-ink">
         <div className="mx-auto max-w-5xl px-6 py-24 text-center">
           <p className="font-display text-3xl md:text-5xl leading-tight">
-            "El puerto enseña a leer el mundo desde sus orillas:{" "}
-            <span className="hl-block">lo que se descarga, lo que se desplaza, lo que resuena.</span>"
+            "El espacio tecnológico no es el espacio humano:{" "}
+            <span className="hl-block">uno nos codifica y nos condena; el otro nos habita y nos libera..</span>"
           </p>
           <p className="mt-6 text-sm uppercase tracking-[0.3em] text-muted-foreground">
-            Universidad de Playa Ancha · Valparaíso, Chile
+            IGNACIO ROJAS RUBIO · Valparaíso, Chile
           </p>
         </div>
       </section>
