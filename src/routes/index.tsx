@@ -9,6 +9,9 @@ export const Route = createFileRoute("/")({
       { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
       { name: "description", content: "Geografía crítica, filosofía política y música urbana desde el puerto olvidado de Valparaíso, Chile." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: portraitImg, fetchpriority: "high" },
+    ],
   }),
   component: Index,
 });
@@ -26,7 +29,7 @@ function Index() {
       {/* HERO — fondo Valparaíso + retrato pequeño */}
       <section className="relative overflow-hidden border-b-2 border-ink bg-ink text-background">
         <div className="absolute inset-0">
-          <img src={portraitImg} alt="Ignacio Rojas-Rubio" className="absolute inset-0 h-full w-full object-cover object-center" />
+          <img src={portraitImg} alt="Ignacio Rojas-Rubio" width={1920} height={1280} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover object-center" />
           <div className="absolute inset-0 bg-[oklch(0.25_0.08_27)] mix-blend-multiply opacity-70" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/20" />
         </div>
@@ -61,7 +64,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-background/15">
           {[
             { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Dr. en Geografía · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/investigación" },
-            { n: "02", alias: "Profe Nacho", role: "Docencia · Educación", desc: "Educación formal y no formal, trabajo de campo e IAP, to: "/aula" },
+            { n: "02", alias: "Profe Nacho", role: "Docencia · Educación", desc: "Educación formal y no formal, trabajo de campo e IAP.", to: "/aula" },
             { n: "03", alias: "GEO Selektor", role: "Selector y Colleccionista · Vinilos", desc: "Vibraciones, raíces y territorialidad. Columnas de opinión, vivencas por el mundo, sesiones y selecciones.", to: "/curaduría musical" },
           ].map((p) => (
             <a key={p.n} href={p.to} className="group p-6 md:p-8 first:pt-8 md:first:pt-8 hover:bg-highlight transition-colors">
