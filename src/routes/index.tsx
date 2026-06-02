@@ -12,6 +12,44 @@ export const Route = createFileRoute("/")({
     links: [
       { rel: "preload", as: "image", href: portraitImg },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Ignacio Rojas-Rubio",
+          jobTitle: "Doctor en Geografía",
+          affiliation: {
+            "@type": "CollegeOrUniversity",
+            name: "Universidad de Playa Ancha (UPLA)",
+          },
+          url: "https://ignaciorojasgeo.lovable.app",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Valparaíso",
+            addressCountry: "CL",
+          },
+          knowsAbout: [
+            "Geografía crítica",
+            "Filosofía política",
+            "Economía política",
+            "Vivienda",
+            "Música urbana",
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Ignacio Rojas-Rubio",
+          url: "https://ignaciorojasgeo.lovable.app",
+          inLanguage: "es-CL",
+        }),
+      },
+    ],
   }),
   component: Index,
 });
@@ -115,7 +153,7 @@ function Index() {
           </Link>
           <Link to="/musica" className="group block">
             <div className="relative aspect-[4/3] overflow-hidden border-2 border-ink">
-              <img src={vinylImg} alt="Vinilos" loading="lazy" width={1280} height={896}
+              <img src={vinylImg} alt="Colección de discos de vinilo de GEO Selektor" loading="lazy" width={1280} height={896}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-[oklch(0.45_0.2_260)] mix-blend-multiply opacity-60 group-hover:opacity-40 transition-opacity" />
               <div className="absolute bottom-0 left-0 p-5">
