@@ -103,7 +103,7 @@ function Index() {
           {[
             { n: "01", alias: "Dr. Ignacio Rojas-Rubio", role: "Dr. en Geografía · Investigador", desc: "Geografía crítica, vivienda y filosofía política. Publicaciones, ponencias y proyectos.", to: "/investigación" },
             { n: "02", alias: "Profe Nacho", role: "Docencia · Educación", desc: "Educación formal y no formal, trabajo de campo e IAP.", to: "/aula" },
-            { n: "03", alias: "GEO Selektor", role: "Selector y Colleccionista · Vinilos", desc: "Vibraciones, raíces y territorialidad. Columnas de opinión, vivencas por el mundo, sesiones y selecciones.", to: "/curaduría musical" },
+            { n: "03", alias: "GEO Selektor", role: "Selector y Coleccionista · Vinilos", desc: "Vibraciones, raíces y territorialidad. Columnas de opinión, vivencas por el mundo, sesiones y selecciones.", to: "/curaduría musical" },
           ].map((p) => (
             <a key={p.n} href={p.to} className="group p-6 md:p-8 first:pt-8 md:first:pt-8 hover:bg-highlight transition-colors">
               <div className="font-display text-5xl text-highlight group-hover:text-ink">{p.n}</div>
