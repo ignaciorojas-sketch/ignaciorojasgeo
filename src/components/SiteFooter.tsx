@@ -22,7 +22,7 @@ export function SiteFooter() {
           <ul className="mt-3 space-y-1 text-sm">
             <li><a className="hover:text-highlight" href="https://instagram.com/geo.selektor" target="_blank" rel="noreferrer">Instagram · @geo.selektor</a></li>
             <li><a className="hover:text-highlight" href="https://soundcloud.com/geoselector" target="_blank" rel="noreferrer">SoundCloud · geoselector</a></li>
-            <li><a className="hover:text-highlight" href="https://youtube.com/@ignaciorojasgeo" target="_blank" rel="noreferrer">YouTube</a></li>
+            <li><a className="hover:text-highlight" href="https://youtube.com/ignaciorojasgeo" target="_blank" rel="noreferrer">YouTube</a></li>
           </ul>
         </div>
       </div>
