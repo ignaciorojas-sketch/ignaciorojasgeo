@@ -7,6 +7,8 @@ export const Route = createFileRoute("/pasantias")({
     meta: [
       { title: "Pasantías — Ignacio Rojas-Rubio" },
       { name: "description", content: "Estancias y pasantías de investigación nacionales e internacionales." },
+      { property: "og:title", content: "Pasantías de investigación · Ignacio Rojas-Rubio" },
+      { property: "og:description", content: "Estancias en Madrid, Quito y CDMX en geografía urbana y filosofía política." },
     ],
     links: [{ rel: "canonical", href: "/pasantias" }],
   }),

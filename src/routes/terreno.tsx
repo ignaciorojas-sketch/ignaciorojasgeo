@@ -7,6 +7,8 @@ export const Route = createFileRoute("/terreno")({
     meta: [
       { title: "Terreno — Ignacio Rojas-Rubio" },
       { name: "description", content: "Trabajo de campo, cartografías y registros desde el territorio porteño." },
+      { property: "og:title", content: "Terreno · Trabajo de campo en Valparaíso" },
+      { property: "og:description", content: "Recorridos etnográficos, cartografías y notas desde cerros, quebradas y orillas del puerto." },
     ],
     links: [{ rel: "canonical", href: "/terreno" }],
   }),

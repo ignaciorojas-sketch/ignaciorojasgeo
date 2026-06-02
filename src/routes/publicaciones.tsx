@@ -8,8 +8,27 @@ export const Route = createFileRoute("/publicaciones")({
       { title: "Publicaciones — Ignacio Rojas-Rubio" },
       { name: "description", content: "Libros, capítulos, artículos científicos y ponencias del Dr. Ignacio Rojas-Rubio." },
       { property: "og:title", content: "Publicaciones — Ignacio Rojas-Rubio" },
+      { property: "og:description", content: "Catálogo de libros, capítulos, artículos y ponencias en geografía crítica y filosofía política." },
     ],
     links: [{ rel: "canonical", href: "/publicaciones" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Publicaciones — Ignacio Rojas-Rubio",
+          description:
+            "Catálogo de libros, capítulos, artículos y ponencias del Dr. Ignacio Rojas-Rubio.",
+          url: "https://ignaciorojasgeo.lovable.app/publicaciones",
+          author: {
+            "@type": "Person",
+            name: "Ignacio Rojas-Rubio",
+          },
+          inLanguage: "es-CL",
+        }),
+      },
+    ],
   }),
   component: Publicaciones,
 });

@@ -7,6 +7,8 @@ export const Route = createFileRoute("/cv")({
     meta: [
       { title: "CV — Ignacio Rojas-Rubio" },
       { name: "description", content: "Trayectoria académica del Dr. Ignacio Rojas-Rubio: formación, docencia e investigación." },
+      { property: "og:title", content: "CV del Dr. Ignacio Rojas-Rubio" },
+      { property: "og:description", content: "Formación doctoral, docencia en la UPLA y líneas de investigación en geografía crítica." },
     ],
     links: [{ rel: "canonical", href: "/cv" }],
   }),

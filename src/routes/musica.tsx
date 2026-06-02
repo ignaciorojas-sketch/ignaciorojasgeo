@@ -8,6 +8,7 @@ export const Route = createFileRoute("/musica")({
       { title: "Música — GEO Selektor" },
       { name: "description", content: "Selecciones de vinilo, dub y música urbana por GEO Selektor desde Valparaíso." },
       { property: "og:title", content: "Música — GEO Selektor" },
+      { property: "og:description", content: "Sesiones de dub, raíces y bajo profundo en vinilo desde el puerto olvidado." },
     ],
     links: [{ rel: "canonical", href: "/musica" }],
   }),
