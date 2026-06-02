@@ -10,15 +10,25 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TerrenoRouteImport } from './routes/terreno'
+import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as PublicacionesRouteImport } from './routes/publicaciones'
 import { Route as PasantiasRouteImport } from './routes/pasantias'
 import { Route as MusicaRouteImport } from './routes/musica'
+import { Route as InvestigacionRouteImport } from './routes/investigacion'
 import { Route as CvRouteImport } from './routes/cv'
+import { Route as CuraduriaRouteImport } from './routes/curaduria'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as AulaRouteImport } from './routes/aula'
 import { Route as IndexRouteImport } from './routes/index'
 
 const TerrenoRoute = TerrenoRouteImport.update({
   id: '/terreno',
   path: '/terreno',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreMiRoute = SobreMiRouteImport.update({
+  id: '/sobre-mi',
+  path: '/sobre-mi',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PublicacionesRoute = PublicacionesRouteImport.update({
@@ -36,9 +46,29 @@ const MusicaRoute = MusicaRouteImport.update({
   path: '/musica',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InvestigacionRoute = InvestigacionRouteImport.update({
+  id: '/investigacion',
+  path: '/investigacion',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CvRoute = CvRouteImport.update({
   id: '/cv',
   path: '/cv',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CuraduriaRoute = CuraduriaRouteImport.update({
+  id: '/curaduria',
+  path: '/curaduria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AulaRoute = AulaRouteImport.update({
+  id: '/aula',
+  path: '/aula',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -49,56 +79,97 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aula': typeof AulaRoute
+  '/blog': typeof BlogRoute
+  '/curaduria': typeof CuraduriaRoute
   '/cv': typeof CvRoute
+  '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
   '/publicaciones': typeof PublicacionesRoute
+  '/sobre-mi': typeof SobreMiRoute
   '/terreno': typeof TerrenoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aula': typeof AulaRoute
+  '/blog': typeof BlogRoute
+  '/curaduria': typeof CuraduriaRoute
   '/cv': typeof CvRoute
+  '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
   '/publicaciones': typeof PublicacionesRoute
+  '/sobre-mi': typeof SobreMiRoute
   '/terreno': typeof TerrenoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aula': typeof AulaRoute
+  '/blog': typeof BlogRoute
+  '/curaduria': typeof CuraduriaRoute
   '/cv': typeof CvRoute
+  '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
   '/publicaciones': typeof PublicacionesRoute
+  '/sobre-mi': typeof SobreMiRoute
   '/terreno': typeof TerrenoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/aula'
+    | '/blog'
+    | '/curaduria'
     | '/cv'
+    | '/investigacion'
     | '/musica'
     | '/pasantias'
     | '/publicaciones'
+    | '/sobre-mi'
     | '/terreno'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cv' | '/musica' | '/pasantias' | '/publicaciones' | '/terreno'
+  to:
+    | '/'
+    | '/aula'
+    | '/blog'
+    | '/curaduria'
+    | '/cv'
+    | '/investigacion'
+    | '/musica'
+    | '/pasantias'
+    | '/publicaciones'
+    | '/sobre-mi'
+    | '/terreno'
   id:
     | '__root__'
     | '/'
+    | '/aula'
+    | '/blog'
+    | '/curaduria'
     | '/cv'
+    | '/investigacion'
     | '/musica'
     | '/pasantias'
     | '/publicaciones'
+    | '/sobre-mi'
     | '/terreno'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AulaRoute: typeof AulaRoute
+  BlogRoute: typeof BlogRoute
+  CuraduriaRoute: typeof CuraduriaRoute
   CvRoute: typeof CvRoute
+  InvestigacionRoute: typeof InvestigacionRoute
   MusicaRoute: typeof MusicaRoute
   PasantiasRoute: typeof PasantiasRoute
   PublicacionesRoute: typeof PublicacionesRoute
+  SobreMiRoute: typeof SobreMiRoute
   TerrenoRoute: typeof TerrenoRoute
 }
 
@@ -109,6 +180,13 @@ declare module '@tanstack/react-router' {
       path: '/terreno'
       fullPath: '/terreno'
       preLoaderRoute: typeof TerrenoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre-mi': {
+      id: '/sobre-mi'
+      path: '/sobre-mi'
+      fullPath: '/sobre-mi'
+      preLoaderRoute: typeof SobreMiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/publicaciones': {
@@ -132,11 +210,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MusicaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/investigacion': {
+      id: '/investigacion'
+      path: '/investigacion'
+      fullPath: '/investigacion'
+      preLoaderRoute: typeof InvestigacionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cv': {
       id: '/cv'
       path: '/cv'
       fullPath: '/cv'
       preLoaderRoute: typeof CvRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/curaduria': {
+      id: '/curaduria'
+      path: '/curaduria'
+      fullPath: '/curaduria'
+      preLoaderRoute: typeof CuraduriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aula': {
+      id: '/aula'
+      path: '/aula'
+      fullPath: '/aula'
+      preLoaderRoute: typeof AulaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -151,10 +257,15 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AulaRoute: AulaRoute,
+  BlogRoute: BlogRoute,
+  CuraduriaRoute: CuraduriaRoute,
   CvRoute: CvRoute,
+  InvestigacionRoute: InvestigacionRoute,
   MusicaRoute: MusicaRoute,
   PasantiasRoute: PasantiasRoute,
   PublicacionesRoute: PublicacionesRoute,
+  SobreMiRoute: SobreMiRoute,
   TerrenoRoute: TerrenoRoute,
 }
 export const routeTree = rootRouteImport

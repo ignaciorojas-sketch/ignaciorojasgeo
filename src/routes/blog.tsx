@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
+import heroImg from "@/assets/hero-valpo.jpg";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/blog")({
 function BlogPage() {
   return (
     <>
-      <PageHero eyebrow="Bitácora" title="Blog" />
+      <PageHero image={heroImg} eyebrow="Bitácora" title="Blog" />
       <section className="mx-auto max-w-5xl px-6 py-20">
         <p className="text-lg text-muted-foreground">Próximamente: notas y columnas.</p>
       </section>

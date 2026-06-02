@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
+import heroImg from "@/assets/hero-valpo.jpg";
 
 export const Route = createFileRoute("/aula")({
   head: () => ({
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/aula")({
 function AulaPage() {
   return (
     <>
-      <PageHero eyebrow="02 / Docencia" title="Aula" />
+      <PageHero image={heroImg} eyebrow="02 / Docencia" title="Aula" />
       <section className="mx-auto max-w-5xl px-6 py-20">
         <p className="text-lg text-muted-foreground">
           Próximamente: cursos, materiales pedagógicos y trabajo con estudiantes.

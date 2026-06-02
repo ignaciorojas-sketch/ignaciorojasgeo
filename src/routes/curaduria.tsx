@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
+import heroImg from "@/assets/hero-valpo.jpg";
 
 export const Route = createFileRoute("/curaduria")({
   head: () => ({
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/curaduria")({
 function CuraduriaPage() {
   return (
     <>
-      <PageHero eyebrow="03 / Sonido" title="Curaduría Musical" />
+      <PageHero image={heroImg} eyebrow="03 / Sonido" title="Curaduría Musical" />
       <section className="mx-auto max-w-5xl px-6 py-20">
         <p className="text-lg text-muted-foreground">
           Próximamente: columnas, sesiones y selecciones de vinilo desde GEO Selektor.
