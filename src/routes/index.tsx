@@ -9,6 +9,9 @@ export const Route = createFileRoute("/")({
       { title: "Ignacio Rojas-Rubio — Geógrafo · Scientist of Geography" },
       { name: "description", content: "Geografía crítica, filosofía política y música urbana desde el puerto olvidado de Valparaíso, Chile." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: portraitImg, fetchpriority: "high" },
+    ],
   }),
   component: Index,
 });
