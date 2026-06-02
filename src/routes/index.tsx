@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Geografía crítica, filosofía política y música urbana desde el puerto olvidado de Valparaíso, Chile." },
     ],
     links: [
-      { rel: "preload", as: "image", href: portraitImg, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: portraitImg },
     ],
   }),
   component: Index,
