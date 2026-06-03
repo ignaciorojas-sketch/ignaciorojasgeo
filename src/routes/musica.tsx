@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import heroImg from "@/assets/hero-valpo.jpg";
 
-export const Route = createFileRoute("/cv")({
+export const Route = createFileRoute("/musica")({
   head: () => ({
     meta: [
       { title: "CV — Dr. Ignacio Rojas-Rubio" },
