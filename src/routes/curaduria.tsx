@@ -213,7 +213,7 @@ function CuraduriaPage() {
             <span className="text-primary">●</span> El Proceso Metabólico de la Escucha
           </h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            La curaduría musical en <strong>Krisis</strong> no es la mera acumulación comercial de vinilos u objetos de consumo. Se entiende como un canal abierto de preservación, una cartografía técnica de resistencia sónica en el territorio del puerto.
+            La curaduría musical no es la mera acumulación comercial de vinilos u objetos de consumo. Se entiende como un canal abierto de preservación, un entramado de lugares de escucha, disquerias, personas, memorias y espacialidades que nos recuerdan que la preservación es nuestra lucha.
           </p>
           <div className="pt-2 border-t mt-4 flex items-center justify-between flex-wrap gap-3">
             <div className="flex items-center space-x-2 text-sm text-foreground/80">
