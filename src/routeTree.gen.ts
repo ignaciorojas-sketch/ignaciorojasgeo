@@ -15,7 +15,6 @@ import { Route as PublicacionesRouteImport } from './routes/publicaciones'
 import { Route as PasantiasRouteImport } from './routes/pasantias'
 import { Route as MusicaRouteImport } from './routes/musica'
 import { Route as InvestigacionRouteImport } from './routes/investigacion'
-import { Route as CvRouteImport } from './routes/cv'
 import { Route as CuraduriaRouteImport } from './routes/curaduria'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AulaRouteImport } from './routes/aula'
@@ -51,11 +50,6 @@ const InvestigacionRoute = InvestigacionRouteImport.update({
   path: '/investigacion',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CvRoute = CvRouteImport.update({
-  id: '/cv',
-  path: '/cv',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CuraduriaRoute = CuraduriaRouteImport.update({
   id: '/curaduria',
   path: '/curaduria',
@@ -82,7 +76,6 @@ export interface FileRoutesByFullPath {
   '/aula': typeof AulaRoute
   '/blog': typeof BlogRoute
   '/curaduria': typeof CuraduriaRoute
-  '/cv': typeof CvRoute
   '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
@@ -95,7 +88,6 @@ export interface FileRoutesByTo {
   '/aula': typeof AulaRoute
   '/blog': typeof BlogRoute
   '/curaduria': typeof CuraduriaRoute
-  '/cv': typeof CvRoute
   '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
@@ -109,7 +101,6 @@ export interface FileRoutesById {
   '/aula': typeof AulaRoute
   '/blog': typeof BlogRoute
   '/curaduria': typeof CuraduriaRoute
-  '/cv': typeof CvRoute
   '/investigacion': typeof InvestigacionRoute
   '/musica': typeof MusicaRoute
   '/pasantias': typeof PasantiasRoute
@@ -124,7 +115,6 @@ export interface FileRouteTypes {
     | '/aula'
     | '/blog'
     | '/curaduria'
-    | '/cv'
     | '/investigacion'
     | '/musica'
     | '/pasantias'
@@ -137,7 +127,6 @@ export interface FileRouteTypes {
     | '/aula'
     | '/blog'
     | '/curaduria'
-    | '/cv'
     | '/investigacion'
     | '/musica'
     | '/pasantias'
@@ -150,7 +139,6 @@ export interface FileRouteTypes {
     | '/aula'
     | '/blog'
     | '/curaduria'
-    | '/cv'
     | '/investigacion'
     | '/musica'
     | '/pasantias'
@@ -164,7 +152,6 @@ export interface RootRouteChildren {
   AulaRoute: typeof AulaRoute
   BlogRoute: typeof BlogRoute
   CuraduriaRoute: typeof CuraduriaRoute
-  CvRoute: typeof CvRoute
   InvestigacionRoute: typeof InvestigacionRoute
   MusicaRoute: typeof MusicaRoute
   PasantiasRoute: typeof PasantiasRoute
@@ -217,13 +204,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestigacionRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/cv': {
-      id: '/cv'
-      path: '/cv'
-      fullPath: '/cv'
-      preLoaderRoute: typeof CvRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/curaduria': {
       id: '/curaduria'
       path: '/curaduria'
@@ -260,7 +240,6 @@ const rootRouteChildren: RootRouteChildren = {
   AulaRoute: AulaRoute,
   BlogRoute: BlogRoute,
   CuraduriaRoute: CuraduriaRoute,
-  CvRoute: CvRoute,
   InvestigacionRoute: InvestigacionRoute,
   MusicaRoute: MusicaRoute,
   PasantiasRoute: PasantiasRoute,
@@ -271,3 +250,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
