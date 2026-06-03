@@ -55,10 +55,7 @@ export const Route = createFileRoute("/")({
 });
 
 const latest = [
-  { year: "2024", title: "Geografías del despojo en el Chile post-estallido", venue: "Revista de Geografía Norte Grande", tag: "Artículo" },
-  { year: "2023", title: "Cartografías críticas del puerto", venue: "Editorial UPLA", tag: "Capítulo" },
-  { year: "2023", title: "Habitar el sonido: dub, espacio y memoria", venue: "Revista Bifurcaciones", tag: "Artículo" },
-  { year: "2022", title: "Pedagogías territoriales en Valparaíso", venue: "Congreso EGAL, La Paz", tag: "Ponencia" },
+
 ];
 
 function Index() {
