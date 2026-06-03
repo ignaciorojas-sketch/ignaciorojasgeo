@@ -15,7 +15,7 @@ export const Route = createFileRoute("/terreno")({
 function TerrenoPage() {
   return (
     <div>
-      <PageHero title="Terreno" subtitle="Geografía aplicada y trabajo en campo." image={heroImg} />
+      <PageHero title="Terreno" description="Geografía aplicada y trabajo en campo." image={heroImg} />
       <section className="max-w-4xl mx-auto px-6 py-16">
         <p className="text-muted-foreground">Contenido en preparación.</p>
       </section>

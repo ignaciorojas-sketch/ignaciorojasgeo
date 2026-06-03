@@ -15,7 +15,7 @@ export const Route = createFileRoute("/pasantias")({
 function PasantiasPage() {
   return (
     <div>
-      <PageHero title="Pasantías" subtitle="Estancias e intercambios académicos." image={heroImg} />
+      <PageHero title="Pasantías" description="Estancias e intercambios académicos." image={heroImg} />
       <section className="max-w-4xl mx-auto px-6 py-16">
         <p className="text-muted-foreground">Contenido en preparación.</p>
       </section>

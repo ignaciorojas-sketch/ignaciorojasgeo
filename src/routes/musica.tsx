@@ -15,7 +15,7 @@ export const Route = createFileRoute("/musica")({
 function MusicaPage() {
   return (
     <div>
-      <PageHero title="Música" subtitle="Proyectos sonoros y musicales." image={heroImg} />
+      <PageHero title="Música" description="Proyectos sonoros y musicales." image={heroImg} />
       <section className="max-w-4xl mx-auto px-6 py-16">
         <p className="text-muted-foreground">Contenido en preparación.</p>
       </section>

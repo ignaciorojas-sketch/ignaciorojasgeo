@@ -15,7 +15,7 @@ export const Route = createFileRoute("/publicaciones")({
 function PublicacionesPage() {
   return (
     <div>
-      <PageHero title="Publicaciones" subtitle="Libros, capítulos y artículos académicos." image={heroImg} />
+      <PageHero title="Publicaciones" description="Libros, capítulos y artículos académicos." image={heroImg} />
       <section className="max-w-4xl mx-auto px-6 py-16">
         <p className="text-muted-foreground">Listado de publicaciones en preparación.</p>
       </section>
