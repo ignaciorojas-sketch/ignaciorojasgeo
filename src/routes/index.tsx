@@ -54,9 +54,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const latest = [
-
-];
+const latest: Array<{ title: string; year: string; venue: string; tag: string }> = [];
 
 function Index() {
   return (
