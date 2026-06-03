@@ -188,7 +188,7 @@ function BlogPage() {
         {!columnaActiva ? (
           <div className="space-y-12">
             <div className="p-6 rounded-xl bg-muted/40 border text-sm text-muted-foreground leading-relaxed">
-              <strong>Krisis</strong> es tu archivo digital autónomo. Un espacio de ejercicio para-académico donde confluyen análisis territoriales, reflexiones éticas, economía política y anotaciones sueltas desde Valparaíso.
+              <strong>Krisis</strong> archivo digital autónomo. Un espacio de ejercicio para-académico donde confluyen análisis territoriales, reflexiones éticas, economía política y anotaciones sueltas desde Valparaíso.
             </div>
 
             <section className="space-y-8">
