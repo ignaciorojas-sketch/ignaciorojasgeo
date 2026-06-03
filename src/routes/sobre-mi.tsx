@@ -82,7 +82,7 @@ function SobreMiPage() {
             Soy <strong>{perfil.nombre}</strong>. Profesor e investigador especializado en la teoría y metodología de la geografía, con un enfoque crítico fuertemente asentado en la filosofía política del espacio y la economía política urbana. 
           </p>
           <p className="text-base text-muted-foreground">
-            Actualmente me desempeño como {perfil.afiliacion}. Cuento con una trayectoria consolidada en docencia universitaria, estancias de investigación internacionales (Karlsruhe Institute of Technology en Alemania, Universidad Autónoma de Barcelona en España, y Universidad Federal de Goiás en Brasil) y en la dirección editorial científica, desempeñándome como:
+            Actualmente me desempeño como {perfil.afiliacion}. Cuento con una trayectoria consolidada en docencia universitaria, estancias de investigación internacionales (Karlsruhe Institute of Technology en Alemania, Universidad Autónoma de Barcelona en España, Universidad de Barcelona, Universidad Federal de Goiás en Brasil) y en la dirección editorial científica, desempeñándome como:
           </p>
           <ul className="list-disc pl-6 space-y-1 text-base text-muted-foreground">
             {perfil.editoriales.map((ed, i) => (
