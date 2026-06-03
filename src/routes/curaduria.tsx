@@ -175,7 +175,7 @@ const ARCHIVO_GRAFICO = [
   { id: 1, titulo: "Sesión Lunes de Selectores — La Chopoteca", info: "Archivo fotográfico de las 6 horas continuas en vinilo." },
   { id: 2, titulo: "Mantenimiento Técnico Doble Shot 69", info: "Ajuste e ingeniería artesanal de infraestructura sónica." },
   { id: 3, opacity: true, titulo: "Archivo en Construcción", info: "Nuevos registros gráficos y fotos de vinilos se indexarán próximamente." }
-]);
+];
 
 function CuraduriaPage() {
   const [pestanaActiva, setPestanaActiva] = useState<"maleta" | "academia" | "biblioteca" | "grafico">("maleta");
