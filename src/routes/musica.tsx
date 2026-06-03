@@ -30,7 +30,7 @@ function Cv() {
             el análisis territorial, la filosofía política, la vivienda, los desplazamientos y la cultura sonora, 
             pensando el espacio y habitando el sonido como un <em>Scientist of Dub</em>.
           </p>
-          <p class="text-lg leading-relaxed max-w-prose">
+          <p className="text-lg leading-relaxed max-w-prose">
             Cuenta con una sólida trayectoria en docencia universitaria, guiando procesos formativos en asignaturas 
             de geografía humana, social y metodologías de investigación, junto con una activa participación en proyectos 
             de investigación aplicada y cartografía social en la Región de Valparaíso.
@@ -127,7 +127,7 @@ function Cv() {
               <div className="text-xs uppercase tracking-[0.3em] opacity-70">Email Institucional</div>
               <div className="font-display text-2xl mt-2">ignacio.rojas@upla.cl</div>
             </a>
-            <div class="border-2 border-ink p-6">
+            <div className="border-2 border-ink p-6">
               <div className="text-xs uppercase tracking-[0.3em] opacity-70">Afiliación Académica</div>
               <div className="font-display text-2xl mt-2">Universidad de Playa Ancha</div>
               <div className="text-sm mt-1 text-muted-foreground">Avenida Playa Ancha 850, Valparaíso, Chile</div>
